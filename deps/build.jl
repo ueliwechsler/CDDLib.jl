@@ -6,6 +6,10 @@ const prefix = Prefix(get([a for a in ARGS if a != "--verbose"], 1, joinpath(@__
 products = [
     LibraryProduct(prefix, ["libcddgmp"], :libcddgmp),
 ]
+products = [
+    LibraryProduct(prefix, ["libcdd-0"], :libcddgmp),
+]
+
 
 # Download binaries from hosted location
 bin_prefix = "https://github.com/JuliaPolyhedra/cddlibBuilder/releases/download/v0.94.0-j-2"
